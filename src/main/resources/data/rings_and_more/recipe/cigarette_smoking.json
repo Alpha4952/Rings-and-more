@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "l": {
+            "tag": "minecraft:leaves"
+        },
+        "p": {
+            "item": "minecraft:paper"
+        }
+    },
+    "pattern": [
+        "plp"
+    ],
+    "result": {
+        "count": 1,
+        "id": "rings_and_more:cigarette"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "d": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "pattern": [
+        "dg ",
+        "g g",
+        " g "
+    ],
+    "result": {
+        "count": 1,
+        "id": "rings_and_more:golden_ring"
+    }
+}
