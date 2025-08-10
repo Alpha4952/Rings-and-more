@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rings-and-more",
+	"version": "${version}",
+	"name": "Rings and more",
+	"description": "Add rings and other accessories",
+	"authors": [
+		"Alpheta"
+	],
+	"contact": {
+		"modrinth": "https://modrinth.com/user/Alpheta",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/rings-and-more/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"alpheta.rings_and_more.RingsAndMore"
+		],
+		"fabric-datagen": [
+			"alpheta.rings_and_more.RingsAndMoreDataGenerator"
+		],
+        "client": [
+            "alpheta.rings_and_more.RingsAndMoreClient"
+        ]
+	},
+	"mixins": [
+		"rings-and-more.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
