@@ -1,0 +1,8 @@
+{
+    "cigarette_smoking": {
+        "subtitle": "subtitles.rings_and_more.cigarette_smoking",
+        "sounds": [
+            "rings_and_more:cigarette_smoking"
+        ]
+    }
+}

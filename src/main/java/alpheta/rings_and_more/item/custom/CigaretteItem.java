@@ -8,12 +8,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
-
-import java.util.Optional;
 
 public class CigaretteItem extends Item {
     public CigaretteItem(Settings settings) {
@@ -43,6 +42,8 @@ public class CigaretteItem extends Item {
             );
         }
 
+        user.getStackInHand(hand).damage(1, user, LivingEntity.getSlotForHand(hand));
+        user.incrementStat(Stats.USED.getOrCreateStat(this));
         user.setCurrentHand(hand);
         user.getItemCooldownManager().set(this, 80);
         return TypedActionResult.success(user.getStackInHand(hand));
